@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS pozicovani</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="box-1">
+        <pre>
+              position: absolute;
+              left: 20px;
+              top: 20px;
+              width: 200px;
+              height: 200px;
+              background-color: #d8f5ff;
+            </pre>
+        <p>Tento div je přímo v okně, pozice se bude tedy vztahovat přímo k oknu prohližeče.</p>
+    </div>
+    <main class="wrap">
+        <div class="box-2">
+            <pre>
+          position: relative;
+          top: 0;
+          right: 0;
+          width: 200px;
+          height: 200px;
+          background-color: #c1ffdb;
+        </pre>
+            <p>Relativní pozicování ve vztahu ke svým sourozencům (divům).</p>
+        </div>
+
+        <div class="box-3">
+            <pre>
+          position: relative;
+          top: 100px;
+          left: 20px;
+          width: 600px;
+          height: 400px;
+          background-color: #ffd7c2;
+            </pre>
+            <p>Relativní pozicování ve vztahu k hornímu divu. Je ale posunut.</p>
+
+            <div class="box-4">
+                <pre>
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: #ffc7e4;
+          </pre>
+                <p>Absolutní pozicování uvnitř relativního divu.</p>
+            </div>
+
+            <div class="box-5">
+                <pre>
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                width: 200px;
+                height: 200px;
+                background-color: #bdb76b;
+              </pre>
+                <p>Fixní pozicování uvnitř relativního divu. Pri scrollování zůstane na místě.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
